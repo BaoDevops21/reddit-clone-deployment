@@ -43,26 +43,3 @@ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 sudo snap install kubectl --classic
 minikube start --driver=docker
-
-
-## Step 5: Building the Docker Image
-
-Create a Dockerfile in the project directory
-FROM node:19-alpine3.15
-WORKDIR /reddit-clone
-COPY . /reddit-clone
-RUN npm install
-EXPOSE 3000
-CMD ["npm", "run", "dev"]
-
-Exit and save file.
-
-Build the docker build . -t your-dockerhub-username/reddit-clone
-Push the image to Docker Hub:
-
-
-## Step 6: Push the image to Docker Hub:
-docker login
-docker push your-dockerhub-username/reddit-clone
-
-## Step 7 Kubernetes Deployment
