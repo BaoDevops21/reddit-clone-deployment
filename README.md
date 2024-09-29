@@ -10,12 +10,30 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
   - [Step 2: Clone the Code on CI-Server](#step-2-clone-the-code-on-ci-server)
   - [Step 3: Install Docker on Both Servers](#step-3-install-docker-on-both-servers)
   - [Step 4: Install Minikube and kubectl on Deployment Server](#step-4-install-minikube-and-kubectl-on-deployment-server)
-- [Building the Docker Image](#building-the-docker-image)
-- [Kubernetes Deployment](#kubernetes-deployment)
-- [Accessing the Application](#accessing-the-application)
-- [Ingress Setup](#ingress-setup)
+  - [Building the Docker Image](#building-the-docker-image)
+  - [Kubernetes Deployment](#kubernetes-deployment)
+  - [Accessing the Application](#accessing-the-application)
 - [Troubleshooting](#troubleshooting)
 - [License](#license)
+
+## Prerequisites
+- **AWS Account**: For provisioning EC2 instances.
+- **Docker**: Installed on both CI and Deployment servers.
+- **Minikube**: Installed on the Deployment server.
+- **kubectl**: Installed on the Deployment server.
+
+## Installation
+
+### Step 1: Provision EC2 Instances
+1. Create two instances:
+   - **CI-Server**: Ubuntu, t2.micro
+   - **Deployment Server**: Ubuntu, t2.medium
+
+### Step 2: Clone the Code on CI-Server
+```bash
+# Clone the code repository on your CI-Server from GitHub
+git clone https://github.com/BaoDevops21/reddit-clone
+
 
 ## Prerequisites
 - **AWS Account**: For provisioning EC2 instances.
