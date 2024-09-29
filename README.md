@@ -15,6 +15,8 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
   - [Step 6: Accessing the Application](#step-6-accessing-the-application)
 - [Troubleshooting](#troubleshooting)
 
+## Installation
+
 ## Prerequisites
 - **AWS Account**: For provisioning EC2 instances.
 - **Docker**: Installed on both CI and Deployment servers.
@@ -33,7 +35,13 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
 # Clone the code repository on your CI-Server from GitHub
 git clone https://github.com/BaoDevops21/reddit-clone
 
-### Step 3: Install Docker on Both Servers
+Step 3: Install Docker on Both Servers
+# On both servers, run:
+sudo apt-get update
+sudo apt-get install docker.io -y
+sudo usermod -aG docker $USER
+newgrp docker
+
 
 # On both servers, run:
 sudo apt-get update
