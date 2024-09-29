@@ -143,6 +143,6 @@ kubectl get services
 4. Access the application:
 minikube service reddit-clone-service --url
 
-## Troubleshooting
+# Troubleshooting
 No space left on device: Clean up Docker images, containers, and volumes.
 Unable to access the application: Ensure that the appropriate ports are open in the AWS security group.
