@@ -53,14 +53,14 @@ git clone https://github.com/BaoDevops21/reddit-clone
 # Clone the code repository on your CI-Server from GitHub
 git clone https://github.com/BaoDevops21/reddit-clone
 
-Step 3: Install Docker on Both Servers
+### Step 3: Install Docker on Both Servers
 On both servers, run:
 sudo apt-get update
 sudo apt-get install docker.io -y
 sudo usermod -aG docker $USER
 newgrp docker
 
-Step 4: Install Minikube and kubectl on Deployment Server
+### Step 4: Install Minikube and kubectl on Deployment Server
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
 sudo snap install kubectl --classic
@@ -83,7 +83,7 @@ docker build . -t your-dockerhub-username/reddit-clone
 docker login
 docker push your-dockerhub-username/reddit-clone
 
-Step 5: Kubernetes Deployment
+### Step 5: Kubernetes Deployment
 1. Create a K8s directory:
 mkdir K8s
 cd K8s
@@ -117,7 +117,7 @@ kubectl apply -f Deployment.yml
 4. Verify the deployment:
 kubectl get deployments
 
-Step 6: Accessing the Application
+### Step 6: Accessing the Application
 1. Create a Service.yml file:
 apiVersion: v1
 kind: Service
