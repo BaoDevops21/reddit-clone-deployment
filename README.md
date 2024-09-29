@@ -32,7 +32,8 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
 ```bash
 # Clone the code repository on your CI-Server from GitHub
 git clone https://github.com/BaoDevops21/reddit-clone
-Step 3: Install Docker on Both Servers
+
+### Step 3: Install Docker on Both Servers
 bash
 
 # On both servers, run:
