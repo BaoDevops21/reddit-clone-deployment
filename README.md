@@ -1,4 +1,6 @@
 # Reddit Clone Deployment on Kubernetes
+### Live Application
+![Reddit Clone Live](https://raw.githubusercontent.com/BaoDevops21/reddit-clone-deployment/main/Reddit%20Clone%20live.png)
 
 ## Overview
 This project demonstrates how to deploy a Reddit clone web application on a Kubernetes cluster using Minikube and Docker. It covers the entire process from setting up the CI and Deployment servers to deploying and accessing the application via the Internet.
@@ -14,8 +16,6 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
   - [Step 5: Kubernetes Deployment](#step-5-kubernetes-deployment)
   - [Step 6: Accessing the Application](#step-6-accessing-the-application)
 - [Troubleshooting](#troubleshooting)
-
-## Installation
 
 ## Prerequisites
 - **AWS Account**: For provisioning EC2 instances.
@@ -35,7 +35,7 @@ This project demonstrates how to deploy a Reddit clone web application on a Kube
 # Clone the code repository on your CI-Server from GitHub
 git clone https://github.com/BaoDevops21/reddit-clone
 
-Step 3: Install Docker on Both Servers
+### Step 3: Install Docker on Both Servers
 # On both servers, run:
 sudo apt-get update
 sudo apt-get install docker.io -y
@@ -139,6 +139,7 @@ Access the application:
 
 minikube service reddit-clone-service --url
 
+### Live Application
 ![Reddit Clone Live](https://raw.githubusercontent.com/BaoDevops21/reddit-clone-deployment/main/Reddit%20Clone%20live.png)
 
 ## Troubleshooting
