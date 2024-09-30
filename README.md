@@ -139,6 +139,8 @@ Access the application:
 
 minikube service reddit-clone-service --url
 
+https://github.com/BaoDevops21/reddit-clone-deployment/blob/959b9fa339137fc2c2bf7b01387e2316111a7ee5/Reddit%20Clone%20live.png
+
 ## Troubleshooting
 - **No space left on device**: Clean up Docker images, containers, and volumes.
 - **Unable to access the application**: Ensure that the appropriate ports are open in the AWS security group.
