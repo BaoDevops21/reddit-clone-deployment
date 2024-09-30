@@ -139,7 +139,7 @@ Access the application:
 
 minikube service reddit-clone-service --url
 
-![Description](https://github.com/BaoDevops21/reddit-clone-deployment/blob/main/Reddit%20Clone%20live.png?raw=true)
+![Reddit Clone Live](https://raw.githubusercontent.com/BaoDevops21/reddit-clone-deployment/main/Reddit%20Clone%20live.png)
 
 ## Troubleshooting
 - **No space left on device**: Clean up Docker images, containers, and volumes.
